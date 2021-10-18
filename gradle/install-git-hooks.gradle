@@ -1,0 +1,14 @@
+def hookDest = new File("${rootProject.rootDir}/.git/hooks/pre-push")
+def prePushHook = new File("${rootProject.rootDir}/pre-push")
+
+task installGitHooksTask(type: Copy) {
+    hookDest.delete()
+    hookDest << prePushHook.text
+}
+
+task gitExecutableHooks() {
+    Runtime.getRuntime().exec("chmod -R +x ${hookDest}");
+    println "gitExecutableHooks"
+}
+
+gitExecutableHooks.dependsOn installGitHooksTask

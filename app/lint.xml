@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lint>
+
+    <issue id="MissingTranslation" severity="error" />
+    <issue id="DisableBaselineAlignment" severity="error" />
+    <issue id="HardcodedDebugMode" severity="error" />
+    <issue id="PxUsage" severity="error" />
+    <issue id="SpUsage" severity="error" />
+    <issue id="ObsoleteLayoutParam" severity="error" />
+    <issue id="Registered" severity="error" />
+
+
+    <issue id="SetJavaScriptEnabled" severity="warning" />
+    <issue id="DrawAllocation" severity="error" />
+    <issue id="ShowToast" severity="error" />
+
+</lint>
